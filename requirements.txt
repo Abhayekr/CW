@@ -1,4 +1,5 @@
 gunicorn
+ttkthemes
 numpy
 pandas
 scikit-learn
