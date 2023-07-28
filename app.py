@@ -53,6 +53,16 @@ X, y = load_data(url)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
 mlr_model = train_model(X_train, y_train)
 
+# Define a route for the root URL '/'
+@app.route('/', methods=['GET'])
+def home():
+    return "Welcome to the Tube Prediction API!"
+
+# Define a route for the favicon
+@app.route('/favicon.ico', methods=['GET'])
+def favicon():
+    return ""
+
 @app.route('/predict_tubes', methods=['POST'])
 def predict_tubes_endpoint():
     data = request.json
@@ -64,3 +74,10 @@ def predict_tubes_endpoint():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+
+
+
+
+
