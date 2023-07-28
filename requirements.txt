@@ -2,3 +2,4 @@ ttkthemes
 numpy
 pandas
 scikit-learn
+Flask
