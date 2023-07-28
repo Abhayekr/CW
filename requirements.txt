@@ -1,6 +1,6 @@
-gunicorn
 ttkthemes
 numpy
 pandas
 scikit-learn
 Flask
+gunicorn
