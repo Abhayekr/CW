@@ -66,4 +66,4 @@ if __name__ == '__main__':
     X, y = load_data(url)
     X_train, _, y_train, _ = train_test_split(X, y, test_size=0.1, random_state=42)
     mlr_model = train_model(X_train, y_train)
-    app.run(debug=True)
+    app.run()
